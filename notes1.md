@@ -40,3 +40,27 @@ A few directives affect all modules.  For example Total Electric Charge
 
 - Each user should have a .nwchemrc file to point to default data files, such as sets, psuedopotentials, and MD potentials
 -  Contents of default.nwchemrc file based on the above iformation should be:
+
+## Input File Structure
+
+input file reflects the internal structure of NW Chem
+    
+At the beginning of a calculation NW chem determines:
+- how much memory to use
+- name of the database
+- whether it is a new or restarted job
+- where to put the scratch and permanent files
+
+NW Chem looks for start up directives
+
+
+The start-up directives are
+
+START
+RESTART
+SCRATCH_DIR
+PERMANENT_DIR
+MEMORY
+ECHO
+
+
