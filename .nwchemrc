@@ -1,0 +1,10 @@
+ nwchem_basis_library /src/basis/libraries/
+ nwchem_nwpw_library /src/nwpw/libraryps/
+ ffield amber
+ amber_1 /src/data/amber_s/
+ amber_2 /src/data/amber_q/
+ amber_3 /src/data/amber_x/
+ amber_4 /src/data/amber_u/
+ spce   /src/data/solvents/spce.rst
+ charmm_s /src/data/charmm_s/
+ charmm_x /src/data/charmm_x/
