@@ -1,0 +1,27 @@
+ argument  1 = simpleinput.nw
+  Unable to open simpleinput.nw --- appending .nw
+ ------------------------------------------------------------------------
+ nwchem: failed to open the input file                   0
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+  current input line : 
+     0: 
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+ There is an error in the input file
+ ------------------------------------------------------------------------
+ For more information see the NWChem manual at http://www.nwchem-sw.org/index.php/NWChem_Documentation
+
+
+ For further details see manual section:                                                                                                                                                                                                                                                                
+0:nwchem: failed to open the input file:Received an Error in Communication
+application called MPI_Abort(comm=0x84000000, -1) - process 0
+[unset]: write_line error; fd=-1 buf=:cmd=abort exitcode=-1
+:
+system msg for write_line failure : Bad file descriptor
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).

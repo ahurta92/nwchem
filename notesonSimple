@@ -1,0 +1,11 @@
+Simpleinput.nz is an example input file
+It is a Self Consistent Field geometry optimazation of Nitrogen Molecule
+N2, using a Dunning cc-pvdz basis set
+
+contains 4 directives 
+1. title: optional, provides means of easily identifying outputs from jobs
+2. Geometry: provides intial geometry in cartesian coordinates/angstroms 
+3. basis: The Dunning cc-pvdz basis is obtained from NWChem basis library
+4. task: tells the program to optimize the molecular geometry by minimizing the SCF energy
+
+

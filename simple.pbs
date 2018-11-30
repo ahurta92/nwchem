@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=2
+#PBS -l walltime=24:00:00
+#PBS -N simple
+#PBS -j oe
+#PBS -o pbs.out  
+#PBS -q debug
+
+module load nwchem/6.8
