@@ -1,5 +1,7 @@
-start h2o_freq2
-charge 111 
+start h2o_freq
+permanent_dir /gpfs/scratch/ahurtado
+scratch_dir /gpfs/scratch/ahurtado
+charge 1 
 geometry units angstroms
  O       0.0  0.0  0.0
  H       0.0  0.0  1.0

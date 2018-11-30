@@ -1,0 +1,12 @@
+Water Molecule Sample Input
+
+-Optimzation of a positively charged water molecule using second-order Moller-Plesset perturbation theory (MP2)
+-Computation of frequencies at optimized geometry
+
+Preliminary SCF geometry optimization is performed (Hartree Fock) using STO-3G basis
+    - good starting guess of the optimal geometry,
+    - Hessian information generated will be used in the next optimization step
+    - optimization is finished using MP2 and  a basis set with (polarization funcitons)
+    - Compute MP2 vibrational frequencies
+
+
