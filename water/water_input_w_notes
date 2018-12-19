@@ -1,0 +1,39 @@
+start h2o_freq 
+/* start tell NW chem that this run is to be started from the beginning.
+* Existing database or vector files are to be ignored or overwritten.
+* h2o_freq is the prefix to be used for all files created by the calculation
+* /
+charge 1 //* molecule has a charge of 1 
+geometry units angstroms// geometry in cartesian x y z coordinates
+ O       0.0  0.0  0.0
+ H       0.0  0.0  1.0
+ H       0.0  1.0  0.0
+end
+basis
+ H library sto-3g// specify the small basis set for initial optimization
+ O library sto-3g
+end
+The next couple of lines specifies the first SCF directive.
+scf
+ uhf; doublet//unrestricted Hartree fock// doublet spin multiplicity
+ print low// print details (default is restricted open-shell high-spin Hartree-fock)
+end
+{All inputs up to this point affects only the settings in the runtime database}
+{the program takes its infomration from this database, so the sequence of directives up to the first TASK directive is irrelavant.  An exhange of order of the different blocks or directivs would not effect the result. }
+{The task directive must be specified after all relevant input for a given problem.  }
+{The TASK directive casues the code to perform the specified calculations using the parameters set in the preceding directives}
+{The fist task is a SCF calculation with geometry optimaztion specified with the input and scf optimize}
+title "H2O+ : STO-3G UHF geometry optimization"
+task scf optimize
+basis
+ H library 6-31g**
+ O library 6-31g**
+end
+{After the completion of a task settings in the database are used in the subsequent tasks witout change, unless the are overridden by new input directives. }
+{In this example the second task, a bestter basis set is defined }}
+title "H2O+ : 6-31g** UMP2 geometry optimization"
+task mp2 optimize
+mp2; print none; end
+scf; print none; end
+title "H2O+ : 6-31g** UMP2 frequencies"
+task mp2 freq

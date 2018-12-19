@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=2,walltime=01:00:00
+#PBS -N water
+#PBS -j oe
+#PBS -q debug
+
+module load nwchem/6.8
+nwchem water > water.out
