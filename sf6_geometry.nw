@@ -1,0 +1,27 @@
+echo
+
+start molecule
+
+title "SF6 Geometry"
+charge 0
+
+geometry units angstroms print xyz autosym
+   S        0.49135       -0.16258        0.55600
+   F        0.06871        1.01638        1.72115
+   F        2.11718       -0.10155        1.08370
+   F        0.81313        1.07530       -0.57965
+   F       -1.13461       -0.22377        0.02845
+   F        0.91349       -1.34145       -0.60912
+   F        0.16903       -1.40036        1.69179
+end
+
+basis
+  * library 6-31G*
+end
+
+dft
+  xc b3lyp
+  mult 1
+end
+
+task dft optimize
