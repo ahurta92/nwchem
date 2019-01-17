@@ -1,0 +1,27 @@
+echo
+
+start molecule
+
+title "uf6"
+charge 0
+
+geometry units angstroms print xyz autosym
+   U        0.19999        0.67581        0.05818
+   F        0.29040        2.83518        0.15748
+   F        0.10921       -1.48343       -0.04121
+   F        2.35389        0.59425       -0.12727
+   F       -1.95406        0.75794        0.24352
+   F        0.01854        0.78239       -2.09513
+   F        0.38153        0.56887        2.21130
+end
+
+basis
+  * library 6-31G*
+end
+
+dft
+  xc b3lyp
+  mult 1
+end
+
+task dft optimize
